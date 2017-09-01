@@ -44,13 +44,13 @@ functionality., css
 26. Edge locations are Read/Write, Object can be cleared before TTL but there is a charge on that.
 27. A Cloud front can have multiple origins and viewer access can be restricted via signed urls/cookies
 28. Buckets can be secured viaBucket (Policy/Access control list), Encryption can be
-           -In transit(SSL/TLS)
-           -At rest
-            -Server Side
-              - SSE S3(Master key rotates, AES 256)
-              - SSE KMS(more transparency but costs- order Trail)(Envelope key- key to master key)
-              - SSE Customer(SSE C, key is managed by us and AWS manages encryption)
-           -Client side is when client encrypts and sends to server.
+    -In transit(SSL/TLS)
+    -At rest
+     -Server Side
+       - SSE S3(Master key rotates, AES 256)
+       - SSE KMS(more transparency but costs- order Trail)(Envelope key- key to master key)
+       - SSE Customer(SSE C, key is managed by us and AWS manages encryption)
+       - Client side is when client encrypts and sends to server.
 
 29. Storage Gateway
        - NFS(flat files)File gateway(accessd theough NFS mount point)(On permise App -- NFS-Storage Gateway--Inernet or Direct Connect or AWS VPC--S3, stored on S3)
