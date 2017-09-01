@@ -44,27 +44,27 @@ functionality., css
 26. Edge locations are Read/Write, Object can be cleared before TTL but there is a charge on that.
 27. A Cloud front can have multiple origins and viewer access can be restricted via signed urls/cookies
 28. Buckets can be secured viaBucket (Policy/Access control list), Encryption can be
-    -In transit(SSL/TLS)
-    -At rest
-     -Server Side
-       - SSE S3(Master key rotates, AES 256)
-       - SSE KMS(more transparency but costs- order Trail)(Envelope key- key to master key)
-       - SSE Customer(SSE C, key is managed by us and AWS manages encryption)
-       - Client side is when client encrypts and sends to server.
+    - In transit(SSL/TLS)
+    - At rest
+    - Server Side
+     - SSE S3(Master key rotates, AES 256)
+     - SSE KMS(more transparency but costs- order Trail)(Envelope key- key to master key)
+     - SSE Customer(SSE C, key is managed by us and AWS manages encryption)
+     - Client side is when client encrypts and sends to server.
 
 29. Storage Gateway
        - NFS(flat files)File gateway(accessd theough NFS mount point)(On permise App -- NFS-Storage Gateway--Inernet or Direct Connect or AWS VPC--S3, stored on S3)
        - Volume Gateway(iSCSI,a virtual hard disk is backed up as incremantal snapsots on a EBS snapshot in cloud)
-          -Stored Volumes -> entire data is available locally and the provides low latency access to data on premise- 1 to 16 TB(backedup on S3)
-          -Cached Volumes-> S3 can be used as primary storage and frequently accessed data is retained locally(32 TB)
+        - Stored Volumes -> entire data is available locally and the provides low latency access to data on premise- 1 to 16 TB(backedup on S3)
+        - Cached Volumes-> S3 can be used as primary storage and frequently accessed data is retained locally(32 TB)
        - Tape Gateways(VTL- backup and archival)(instead of physical tape, virtual tapes are being used, netbackup, backup exac, Veeam)
 Remember: Direct Connect is the direct data line between Data center and AWS
 
 30. Snowball (Earlier AWS import/Export where we send pur own disk and thatwas used by AWS but due to different  firmats it became difficult)
-      -An appliance that customer can store data in and send to Amazon and then the AWS can use that appliance to transfer the data to S3(the box provides secure data transfer and AWS does a s/w erasure of the data) 
-      -Snowball Edge(has compute capacity as well like a data center like running lambda functions like a data acuisition device)
-      -Snowmobile(a Truck and is for Extremely big amount of data) 
-      -Snowball can import/export to and from S3
+      - An appliance that customer can store data in and send to Amazon and then the AWS can use that appliance to transfer the data to S3(the box provides secure data transfer and AWS does a s/w erasure of the data) 
+      - Snowball Edge(has compute capacity as well like a data center like running lambda functions like a data acuisition device)
+      - Snowmobile(a Truck and is for Extremely big amount of data) 
+      - Snowball can import/export to and from S3
 31. Transfer Acceleration 
       - S3 transfer acceleration uses the cloud front edge n/w (url format- bucketname.s3-accelerate.amazonaws.com and bucket static website BUCKETNAME.S3-website.REGION.amazonaws.com )
       - S3 bucket URL format - http://s3-REGION.amazonaws.com/BUCKETNAME	
