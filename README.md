@@ -132,9 +132,9 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - RAID is used to get a desired IOPS performance
      - New EC2 instance with Windows AMI - Add RDP permission to SG(port 3389)- RDP into instance (Get Windows Password, username- Administrator)and Add Disk to a Volume(Stripped- RAID0)
      - RAID Snapshot - While taking a snapshot Cached Data is not stored so in RAID its a problem - Need Application Consistent Snapshot
-           - Stop Application from Writing to Disk
-           - Flush cache Data to disk
-            - Freeze the file system
-            - Unmount the RAID array
-            - Shutting the down the EC2 instance(easiest) 
+         - Stop Application from Writing to Disk
+         - Flush cache Data to disk
+          - Freeze the file system
+          - Unmount the RAID array
+          - Shutting the down the EC2 instance(easiest) 
 		
