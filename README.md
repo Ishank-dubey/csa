@@ -116,5 +116,25 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 53. The change in SG will apply immediately
 54. SG are stateful- both ways are configured inbound and outbound rules, everything else is blocked by default and no deny possible and dependes on region as well
 55. EC2 instance- Actions - Change Security groups to edit SG accociated with EC2 instance
-
+56. lsblk(volumes that are mounted), mkfs -t ext4 /dev/xvdb, mkdir /aDirectory, mount  /dev/xvdb /aDirectory, lsblk, cd /aDirectory, umount /dev/xvdb
+57. Detaching can be done from Volumes tab of the Web Console or Force Detach if the volume  is mounted 
+58. Detach the Volume, Take Snapshot, Restore a Volume from the Snap shot (change the stoarage or upgrade) and the then got to volumes, select te restored volume and Attach(a way to upgrade volume)
+59. lsblk will reveal the volume, check the fles in a volume by file -s /dev/xvdf, mount to the /aDirectory
+60. If we change volume on the fly we must wait 6hours before making another change
+61. EBS volumes can be scaled up only
+62. Volumes must be in the same AZ as the EC2 instance
+63. RAID
+     - Redundant Array of Independent Disks
+          - RAID 0 -Good Performance but NO Redundency, Stripped
+          - RAID 1-Mirrored, Redundancy,
+          - RAID 5-Good for Reads, Bad for Writes and its use is discouraged(parity checkss can be performed using this)
+          - RAID 10- Combination of RAID0 and RAID 1
+     - RAID is used to get a desired IOPS performance
+     - New EC2 instance with Windows AMI - Add RDP permission to SG(port 3389)- RDP into instance (Get Windows Password, username- Administrator)and Add Disk to a Volume(Stripped- RAID0)
+     - RAID Snapshot - While taking a snapshot Cached Data is not stored so in RAID its a problem - Need Application Consistent Snapshot
+           - Stop Application from Writing to Disk
+           - Flush cache Data to disk
+            - Freeze the file system
+            - Unmount the RAID array
+            - Shutting the down the EC2 instance(easiest) 
 		
