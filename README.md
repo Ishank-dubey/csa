@@ -136,5 +136,51 @@ Remember: Direct Connect is the direct data line between Data center and AWS
          - Flush cache Data to disk
           - Freeze the file system
           - Unmount the RAID array
-          - Shutting the down the EC2 instance(easiest) 
-		
+          - Shutting the down the EC2 instance(easiest)
+64. AMI Creation(useful way to encrypt the root volume)
+     - Stop Ec2(Essential for Application Consistent Backup)
+     - Volumes -Select root volume - Actions- Create Snapshot(can not encrypt still) now this Snapshot can be copied, Image created(While doing that we get am option to Encrypt the copy then we can create an Image in AMI                tab)
+     - Only unencryped Snapshots can be Shared
+65. EBS are more durable and Instance Stores are Ephimeral, Instance Stores can only be Rebooted or Terminated`and if the underlying host fails we loose it and by default the root volume goes on Termination.
+66. All AMIs are either EBS backed or Instance Store Backed so Provisioning Time is low for EBS backed AMI	
+67. In Reboot the data is safe in bith EBS and Instance Store
+68. Load Balancers
+     - Application Load Balancers(layer 7 i.e. http and https)
+     - Classic Load Balancers(layer 4)
+69. No Public IP address available for ELB but DNS Name
+70. Application Load Balanver has Target Group, same EC2 can be registered in more than one ELB
+      - Instances are inService or OutOfService in the Load Balancer - Health Check
+71. Cloud Watch -Dashboards - Add Widgets and all the Services supported by Cloud Watch and used by user wil be visible.
+      - Dashboard -For EC2 we have CPU, Disk, Status (EC2 leveal and Hypervisor), Network related metrices, We can also have cistome metrice(for RAM for Example)(in Host layer)
+      - Alarm -Select Metric - Create Alaram - Notification Method when a Threshold is reached
+      - Events - Respond to State Changes in AWS Resourses(e.g. When EC2 is running run Lambda)
+      - Logs -Monitor at Application Level and log events and store as well
+      - Metrices
+      - Standard Monitering is 5 mins, detailed Monitoring is 1 mins 
+      - CLoud watch is for logging , monitering and storing logs vs Cloud Trail is for auditing i.e. moniter AWS Environment - Like a new user, new role, new S3 are logged using Trail
+72. AWS CLI
+     - aws s3 ls (unable to locate creds)
+     - aws  config -Enter access key id, Scret Access Key, region(eu-west-2) 
+     - aws s3 ls (shows the buckets all around the world as S3 is global)
+     - To Find the creds in the EC2 - cd ~, ls -a, cd .aws, ls(shows config and credentials of the user with programmatic access to Admin)
+     - aws ec2 describe-instances(all the instance even terminated ones)  
+     - aws ec2 terminate-instances --instance--ids INSTANCEID
+     - Roles are created Globally
+     - Attaching the IAM role to possible on a running EC2
+73. S3 CLI and Regions
+     - aws s3 cp --recursive s3://aclloudguru /home/aDir --region 	REGIONof EC2
+     -#!/bin/bash (for bash script the path to interpretor)
+74. EC2 Meta data
+     - From the SSHed cli type- curl http://169.254.169.254/latest/meta-data
+75. Auto Sclaing
+     - Create Launch Config(as good as creating a Ec2 instance) - Link with ELB and may be autoscaling policies
+76. EC2 Placements Groups 
+     - Logical Gropu of EC2 instances in a AZ and help avail low latency n/w 
+     - Can not span across multi AZ as we want latency to be low
+     - Only some types such as - compute optimized, GPU, Memory optimized, Stprage Optimized and homogenous instances are recommended
+     - Can not merge placement groups
+77. EFS(Elastic Files System)
+     - Block based and can be shared across Ec2 inatances, not need to pre provosion and charges are based on memory used
+     - Its spread across AZ in a region`
+     - Run the mount command in the Ec2 instances and the same EFS is available to all the mounted EC2
+     - Good for File Server  can be mounted across Ec2 unlike EBS thats mounted in on Single Ec2  	   		
