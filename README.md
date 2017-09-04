@@ -183,4 +183,30 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Block based and can be shared across Ec2 inatances, not need to pre provosion and charges are based on memory used
      - Its spread across AZ in a region`
      - Run the mount command in the Ec2 instances and the same EFS is available to all the mounted EC2
-     - Good for File Server  can be mounted across Ec2 unlike EBS thats mounted in on Single Ec2  	   		
+     - Good for File Server  can be mounted across Ec2 unlike EBS thats mounted in on Single Ec2
+77. EFS(Elastic Files System)
+     - Block based and can be shared across Ec2 inatances, not need to pre provosion and charges are based on memory used
+     - Its spread across AZ in a region`
+     - Run the mount command in the Ec2 instances and the same EFS is available to all the mounted EC2
+     - Good for File Server  can be mounted across Ec2 unlike EBS thats mounted in on Single Ec2 
+78. Lambda
+     - Takes care of Provisioning, event driven compute source, Compute service in responce to HTTP calls, multiple lambda invocations do happen, scaling is taken care, scale up(eg RAM) , Scale out(increase EC2)
+     - Compute - Lambda- Create Lambda Function - Blank Function - API Gateway(trigger- SNS, DynamoDB, Cloud Front, Cloudwatch Events, Logs, Code Commit, Alexa Skills lit, Kinesis, Congnito Sync, Alexa Smart Home, AWS IoT ) -
+     - To HTTP request invoke different Lambda functions but code is identical,
+     - Pricing is per request, Duration(begining for Start to end/terminate , 5 mins is max time duration for a request for Lambda)
+     - Instant scaling and one function can trigger another function i.e. X functions from an Event
+     - AWS X-Ray allows to debug AWS Lambda, can do things globally i.e. Manage S3
+79. The route 53-record set- Alias -  can be S3, ELB, CouldFront
+80. EC2 Root volumes can NOT be encrypted by Default we need Bitlocker
+81. Snapshots exist on S3 i.e. Snapshot of a volume
+82. Sanpshots are incremental so first Snapshot can take more time
+83. Volumes of Encrypted Snapshots are Encrypted and Snapshots of Encrypted Volumes are Encrypted
+84.  Instance Store backed root volume will be deleted when EC2  is stopped.
+85. AMI are stored as per region but can be shared using console or Amazon Ec2 API
+86. Roles can be assigned to an EC2 instance also after its been provisioned using CLI or AWS console
+87. Roles are UNIVERSAL
+88. EFS supports NFSv4
+89. Create SnapShots of an EBS volume via CLI - ec2-create-snapshot
+90. We can change the permissions to a role, even if that role is already assigned to an existing EC2 instance, and these changes will take effect immediately
+91. Sanpshot can be deleted after deregistering from AMI.	 
+     
