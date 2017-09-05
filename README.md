@@ -220,4 +220,7 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 98. CNAMES- Canonical name and can be used to resolve one domain name to another
 99. Alias Records- We can map a DNS name with a Target DNS name, C Name can not be used with naked domain name the naked domain name must have A Record or an Alias
 100. If there is a change in record sets the Alias record is updated as soon	 
-101. CNAME is chargable and not suitable for Naked Domain name whereas Alias can resolve the naked domain name and are not charged       
+101. CNAME is chargable and not suitable for Naked Domain name whereas Alias can resolve the naked domain name and are not charged   
+102. When ELB maintains 2 connections-one with the client and other with the EC2 instance
+103. The Maximum size of a VPC is /16
+104. Cloud front can have origins- S3, Ec2 http server and http server that on premise as well.   
