@@ -209,4 +209,15 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 89. Create SnapShots of an EBS volume via CLI - ec2-create-snapshot
 90. We can change the permissions to a role, even if that role is already assigned to an existing EC2 instance, and these changes will take effect immediately
 91. Sanpshot can be deleted after deregistering from AMI.	 
-     
+92. DNS
+     - Convert human readable form to an IP address(common IPv4 - 32 bits and IPv6 - 128 bits)
+     - Top level domanin name(.com, .uk) - Are maintained by IANA(INternet Assigned Number Authority) 	   
+93. Domain Registrars- Registers each domain name in a central db known as WhoIS database
+94. SOA(Start Of Authority) - Name of the server that supplied data to the zone, administrator of zone
+95. NS(Name Server)record- Helps redirect to Content DNS server which has authoritative DNS records
+96. A Records- Fundamental DNS record , A stands for Address, this will translate the domain name to IP address
+97. TTL is time to live in the DNS servers so can be lowered to 5 mins(300 seconds) when doing DNS migration
+98. CNAMES- Canonical name and can be used to resolve one domain name to another
+99. Alias Records- We can map a DNS name with a Target DNS name, C Name can not be used with naked domain name the naked domain name must have A Record or an Alias
+100. If there is a change in record sets the Alias record is updated as soon	 
+101. CNAME is chargable and not suitable for Naked Domain name whereas Alias can resolve the naked domain name and are not charged       
