@@ -222,9 +222,12 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 100. If there is a change in record sets the Alias record is updated as soon	 
 101. CNAME is chargable and not suitable for Naked Domain name whereas Alias can resolve the naked domain name and are not charged   
 102. When ELB maintains 2 connections-one with the client and other with the EC2 instance
-103. The Maximum size of a VPC is /16
+103. The Maximum size of a VPC is /16 and Minimum is /28
 104. Cloud front can have origins- S3, Ec2 http server and http server that on premise as well.   
 105. S3 and DynamoDB are designed for multi AZ
 106. AMI and instance types are specified while creating a EC2
 107. SNS can work for Email JSON, HTTP, Lambda but NOT DynamoDB
 108. Loose Coupling=> Asynchronous Integration=> Where immediate response is not neededbut only a request registered info will suffice.
+109. An ARN is created as soon a SNS is created
+110. Autoscaling group needs AMI, Instance, Configuration Name
+111. A VPC reduces the ncessary internet access points, obfuscates the necessary internet access point to a level that untrusted end users cannot access them.
