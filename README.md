@@ -224,3 +224,7 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 102. When ELB maintains 2 connections-one with the client and other with the EC2 instance
 103. The Maximum size of a VPC is /16
 104. Cloud front can have origins- S3, Ec2 http server and http server that on premise as well.   
+105. S3 and DynamoDB are designed for multi AZ
+106. AMI and instance types are specified while creating a EC2
+107. SNS can work for Email JSON, HTTP, Lambda but NOT DynamoDB
+108. Loose Coupling=> Asynchronous Integration=> Where immediate response is not neededbut only a request registered info will suffice.
