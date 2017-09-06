@@ -231,3 +231,14 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 109. An ARN is created as soon a SNS is created
 110. Autoscaling group needs AMI, Instance, Configuration Name
 111. A VPC reduces the ncessary internet access points, obfuscates the necessary internet access point to a level that untrusted end users cannot access them.
+112. Security group i a region can have 100 rules and 500 Security groups in a region per account
+113. Route 53 Routing Policies(Global Service like IAM where users are global)
+       - Simple - When there is only one web server- Create Record Set- Alias- Alias Target Name- Routing Policy- Simple
+       - Weighted - Lets you split the traffic based on Weights you assign(not necessarily same region) (Specify the weight and ID)
+       - Latency - Allows to route traffic on Latency(go to lowest Latency)(Give Region and ID)
+       - Failover - Detect failed (In Route 53 - create health check for ELB may be using ELB DNS name and may be associate Health Check)
+       - Geolocation - Route depending on Geopraphic location(give Location and ID,  Default indicates "Everywhere" else)
+114. ELB do cost and Public IPAddress is not Exposed by AWS!
+115. Route 53 support MX(Mail Server) records 
+116. Route 53 Support Sone Apex records(naked domain names)
+117. There is 50 domain names available by default, however it is a soft limit and can be raised by contacting AWS support. 
