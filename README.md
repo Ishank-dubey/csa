@@ -242,3 +242,10 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 115. Route 53 support MX(Mail Server) records 
 116. Route 53 Support Sone Apex records(naked domain names)
 117. There is 50 domain names available by default, however it is a soft limit and can be raised by contacting AWS support. 
+118. A PTR is a reverse DNS Record(converts an IP to DNS name)
+119. Cloud Watch gives System Wide Visibility for Monitoring Resourses, Application Performance, Operational Health.
+120. Hybrid Deployment extends and existing on-premise into cloud
+121. Restricting Data Access S3-Pre Signed URL, S3 ACl, Buckey Policy
+122. ELB is configured with Listeners to accept traffic.
+123. Multi AZ is supported in MySQL, Microsoft SQL, Oracle, PostgresSQL, Aurora
+124. AWS Beanstalk automatically handles the deployment details
