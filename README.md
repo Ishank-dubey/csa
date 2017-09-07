@@ -249,3 +249,36 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 122. ELB is configured with Listeners to accept traffic.
 123. Multi AZ is supported in MySQL, Microsoft SQL, Oracle, PostgresSQL, Aurora
 124. AWS Beanstalk automatically handles the deployment details
+126. RDS - Create instance - MySQL - Select the multi AZ , instance class, storage type, instance identifier, username, passcode, security group
+        - In security group make sure that the inbound rule in db securithy group to SQL Port 3306 has source defined to our Security             Group
+        - End point of DB is used to connect to DB(PHP, Nodejs, java)
+        - When deleting the RDS, an option to Take a Final Snapshots appears
+127. Backups
+       - Automated Backups- Allow recover Database to any point in time in the retention period, 1-35 days, take a full daily snapshots          and store transaction logs, recovery leads to choosing the most recent Backup and then applying the transaction log                      leading to second within.
+       - Automated backups are enabled by default and the size of the backup storage is the size of RDS, IO may get slow while backup is          going on so take backup in a defined window. 
+       - Snapshots are done manually and stored even of the the RDS is deleted
+       - After a restore from both Snapshot and Automatic backup a new DB is created and end is new as well, Multi AZ etc.
+       - Encryption
+         - Encryption at rest is supported in MySQL, Oracle, SQL, Postgres and Maria using AWS KMS
+         - Encrypting an existong DB is not supported if need to this do a migration or restore 
+         - Action on a RDS->
+           - Take Snapshot(Migrate to say Aurora, copy to another region, share, delete, restore and increase DB instance are some actions tha can be performed on a Snapshot), 
+           - Migrate
+           - Point in Time
+           - Read Replica
+128. Multi AZ in RDS
+       - Exact copy goes to another Zone so that in even of Planned Maintainance , DB instance failure or AZ failure the RDS will                failover to standby.
+       - Multi AZ is for Disaster recovery not for performance optimization, use Read Replicas for that!
+       - Microsoft SQL server seems not having multi - AZ(only SQL, Oracle, MySQL, PostGres, MariaDB and Aurora anyways store copies)
+129. Read Replica
+       - Database can have upto 5 replicas
+       - Read Replica is read only copy of production database. 
+       - Supported- MySQL, PostGres, MariaDB	
+       - Read Replicas must have automated backups turned on	
+       - Read Replica of Read Replica have more latency
+       - Each Read Replica has own End Point
+       - Read Replica have no Multi AZ they are in same AZ as that of the database
+       - Read Replicas can be promoted 
+       - Read Replicas can be promoted to become own databases and the replication is broken
+       - Read Replica can be in other region only for MariaDb and MySQL and not for PostgresSQL
+130. Scaling RDS is a task but its a Push action in a DynamoDB w/o any downtime
