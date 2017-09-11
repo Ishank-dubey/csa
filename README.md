@@ -308,11 +308,11 @@ Remember: Direct Connect is the direct data line between Data center and AWS
          - Available in One AZ only
          - Can restore to a NEW AZ if there is Outage
 137. Elasticache
-         - Easy to deploy and scale by allowing to retive info from fast, in memory, managed Caches, improves I/O intensive queries
-         - Memcached
-           - Existing Memcached Environmants will work seemlessly with AWS Memcached
-         - REDIS
-           - Key Value Store and supports Lists and Sets
-           - Master Slave replication and Multi AZ so as to achieve Multi AZ redundency
-         - REDIS has Multi AZ but not Memcached
+     - Easy to deploy and scale by allowing to retive info from fast, in memory, managed Caches, improves I/O intensive queries
+     - Memcached
+       - Existing Memcached Environmants will work seemlessly with AWS Memcached
+     - REDIS
+       - Key Value Store and supports Lists and Sets
+       - Master Slave replication and Multi AZ so as to achieve Multi AZ redundency
+       - REDIS has Multi AZ but not Memcached
 138. Aurora
