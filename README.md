@@ -282,3 +282,17 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Read Replicas can be promoted to become own databases and the replication is broken
        - Read Replica can be in other region only for MariaDb and MySQL and not for PostgresSQL
 130. Scaling RDS is a task but its a Push action in a DynamoDB w/o any downtime
+131. DynamoDB - Fast and flexible data model
+       - Stored Across 3 geographically distinct data centers(different facility)
+       - Stored in SSD
+       - Eventual Consistent Reads
+         - Across all copoies is reached after a second(best for Read perfornamce)
+       - Strongly Consistent reads
+         - Returns a result that reflects all writes that received a success response prior to read
+132. DynamoDB has provisioned throughput capacity, expensive for Write and cheap for Reads
+133. Create DynamoDB table - name - primary key(String, number, binary)- provisioned capacity- ARN is created, We can Reserve Capacity, We get a flexible data model(dynamically add columns)
+134. DynamoDB capacity can be scaled on the Run.
+135. While scaling is happening there is not going to any downtime.
+136. REDSHIFT- Ware housing  service
+       - Online Analytics Processing(OLAP is an example)
+
