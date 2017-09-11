@@ -295,4 +295,24 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 135. While scaling is happening there is not going to any downtime.
 136. REDSHIFT- Ware housing  service
        - Online Analytics Processing(OLAP is an example)
-
+       - Single Node(160Gb, small business)
+       - Multi-Node(big business)
+         - Leader Node(client or receives queries)
+         - Compute Node(perform queries and do computing upto 128 compute nodes)
+         - REDSHIFT stores data as columns and stored sequential so a better I/O
+         - Advanced data compresion as column is of same data type
+         - AWS REDSHIFT will analyse data and apply appropriate compression
+         - Multi Node has Massively Prallel Processing(MPP)
+         - Price - Compute Node Hours, Backup and Data Transfer
+         - Encryption at Transit and Rest are possible
+         - Available in One AZ only
+         - Can restore to a NEW AZ if there is Outage
+137. Elasticache
+         - Easy to deploy and scale by allowing to retive info from fast, in memory, managed Caches, improves I/O intensive queries
+         - Memcached
+           - Existing Memcached Environmants will work seemlessly with AWS Memcached
+         - REDIS
+           - Key Value Store and supports Lists and Sets
+           - Master Slave replication and Multi AZ so as to achieve Multi AZ redundency
+         - REDIS has Multi AZ but not Memcached
+138. Aurora
