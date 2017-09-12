@@ -316,3 +316,26 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Master Slave replication and Multi AZ so as to achieve Multi AZ redundency
        - REDIS has Multi AZ but not Memcached
 138. Aurora
+     - Aurora can not be installed else where except its a service on the AWS cloud only
+       - MySQL compatible
+       - Upto 5 times performance than SQL
+       - Cost is lesser than Oracle
+       - Scaling
+          - 10 Gb is initial and scales to 64Tb when Autoscaling
+          - Scaling do have a downtime but its quick in Aurora
+          - 2 copies of data is contained in each AZ and minimum is 3 AZ i.e. min 6 copies
+          - handles transparently the failure of 2 copies for Write availability and 3 copies failure for Read Consistency
+          - Auto healing
+139. Aurora Replica
+     - Aurora Replica(upto 15, failover occurs)
+     - MySQL Replica(upto 5, failover wont occur)
+     - Available in some region(US east) - Specify DB instance class - Multi AZ - DB indentifier - credentials - failover -                    Priority(tier0 to tier15)
+     - Instance Actions - Create Aurora Replica - Reader - Replication Role
+     - Cluster Endpoints will failover to next good End Point(Instances)
+140. Multi AZ has a failover 
+142. When replicating data from your primary RDS instance to your secondary RDS instance, what is the charge? Its Free		
+143. When you add a rule to an RDS security group you do not need to specify a port number or protocol? FALSE
+144. If you are using Amazon RDS Provisioned IOPS storage with MySQL and Oracle database engines what is the maximum size RDS volume you      can have by default? - 6Tb
+145. What happens to the I/O operations while you take a database snapshot - Suspended even of the Read Replica is there
+146. In RDS when using multiple availability zones, can you use the secondary database as an independent read node? - NO
+147. By default, the maximum provisioned IOPS capacity on an Oracle and MySQL RDS instance (using provisioned IOPS) is 30,000 IOPS.	 	
