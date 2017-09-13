@@ -347,10 +347,7 @@ Remember: Direct Connect is the direct data line between Data center and AWS
           - 10.0.0.0 to 10.255.255.255 (10/8)
           - 172.16.0.0 to 172.31.255.255(17.16/12)
           - 192.168.0.0 to 192.168.255.255(192.168/16)(Max size in AWS VPC)
-          - Internet Gateway --------|            |----- Routing Table ----- Network ACL ---- Subnet ----- SG ---- Instance
-                                     |---Router---|
-          - Virtual Private Gateway--|	          |----- Routing Table ----- Network ACL ---- Subnet ------SG ---- Instance
-          - One Submets is span in ONE AZ
+          - One Subnet is span in ONE AZ
           - SG and ACL and Route Table can Span Acoss AZ
           - One Internet Gateway per VPC
           - SG are stateful and ACL are stateless
@@ -362,7 +359,12 @@ Remember: Direct Connect is the direct data line between Data center and AWS
              - Instances behave as if they are in same private network
              - Peering can be done in same as welll as different AWS accounts
              - Peering is a Star configuration so NOT TRANSITIVE
-150. 												   		 
+150. 
+
+Internet Gateway--------------------|            |----- Routing Table ----- Network ACL ---- Subnet ----- SG ---- Instance
+                                    |---Router---|
+Virtual Private Gateway-------------|	         |----- Routing Table ----- Network ACL ---- Subnet ------SG ---- Instance
+
 
 
 
