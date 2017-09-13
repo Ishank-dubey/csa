@@ -361,9 +361,9 @@ Remember: Direct Connect is the direct data line between Data center and AWS
              - Peering is a Star configuration so NOT TRANSITIVE
 150. 
 
-Internet Gateway--------------------|            |----- Routing Table ----- Network ACL ---- Subnet ----- SG ---- Instance
-                                    |---Router---|
-Virtual Private Gateway-------------|	         |----- Routing Table ----- Network ACL ---- Subnet ------SG ---- Instance
+Internet Gateway                    |-----Routing Table -----Network ACL----Subnet-----SG ----Instance
+                       |---Router---|             
+Virtual Private Gateway             |-----Routing Table-----Network ACL---- Subnet ------SG----Instance
 
 
 
