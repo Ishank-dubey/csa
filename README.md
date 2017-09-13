@@ -339,3 +339,30 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 145. What happens to the I/O operations while you take a database snapshot - Suspended even of the Read Replica is there
 146. In RDS when using multiple availability zones, can you use the secondary database as an independent read node? - NO
 147. By default, the maximum provisioned IOPS capacity on an Oracle and MySQL RDS instance (using provisioned IOPS) is 30,000 IOPS.	 	
+148. VPC can span AZ not Regions, a logically isolated section in AWS cloud, have complete control of the n/w env.
+        - Hardware Virtual Private Network is connection between corporate data center and VPC = Hybrid Cloud 
+149.   For a VPC the private n/w ranges are
+          - 10.0.0.0 to 10.255.255.255 (10/8)
+          - 172.16.0.0 to 172.31.255.255(17.16/12)
+          - 192.168.0.0 to 192.168.255.255(192.168/16)(Max size in AWS VPC)
+          - Internet Gateway ------------|               |----- Routing Table ----- Network ACL ---- Subnet ----- SG ---- Instance
+                                         |------Router---|
+          - Virtual Private Gateway------|	             |----- Routing Table ----- Network ACL ---- Subnet ------SG ---- Instance
+          - One Submets is span in ONE AZ
+          - SG and ACL and Route Table can Span Acoss AZ
+          - One Internet Gateway per VPC
+          - SG are stateful and ACL are stateless
+          -  Default VPC is created by default in Every region so that EC2 are provisioned easily
+             - All Subnets inside have internet access
+             - Each EC2 instance has public and private IP address
+             - Delete of Default VPC can be undone by contacting AWS
+          - VPCs in different regions can be connected via direct network route using private ip address(VPC Peering)
+             - Instances behave as if they are in same private network
+             - Peering can be done in same as welll as different AWS accounts
+             - Peering is a Star configuration so NOT TRANSITIVE
+150. 												   		 
+
+
+
+
+
