@@ -359,12 +359,6 @@ Remember: Direct Connect is the direct data line between Data center and AWS
              - Instances behave as if they are in same private network
              - Peering can be done in same as welll as different AWS accounts
              - Peering is a Star configuration so NOT TRANSITIVE
-150. 
-
-Internet Gateway                    |-----Routing Table -----Network ACL----Subnet-----SG ----Instance
-                       |---Router---|             
-Virtual Private Gateway             |-----Routing Table-----Network ACL---- Subnet ------SG----Instance
-
 
 
 
