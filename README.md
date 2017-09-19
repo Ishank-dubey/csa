@@ -359,6 +359,39 @@ Remember: Direct Connect is the direct data line between Data center and AWS
              - Instances behave as if they are in same private network
              - Peering can be done in same as welll as different AWS accounts
              - Peering is a Star configuration so NOT TRANSITIVE
+151. VPC - Your VPC - Name and CIDR(between /16 and /28) and Tenancy - Creates Route Table, ACL and SG but no new Subnet(SG and ACl can span multiple AZ but not Subnet)
+       - Reserved are 3 by default and 2 can not be used anyways
+       - Internet gateway - detached by default - Attach to VPC(only one IGW per VPC as they are highly durable)
+       - Instead of using default Route Table we create a new route table and set Destination(0.0.0.0/0) and target(IGW) - Subnets Associations(internet access to subnets)
+       - For a subnet we need to turn 'Turn on auto assign public ip' so that EC2  instances get public ip when provisioned
+       - Start Instance	- Network (Subnet-specify own subnet) - AUto Assign public ip address
+       - Subnets can communicate with each other by default
+
+152. For private subnet we can configure SSH, MySQL and ICMP(for pings) with Source as the public subnet address range , note private ip address of private subnet so we can ping and ssh via public EC2
+153. NAT(Network Address Translator)
+       - NAT Instance - EC2 - create - choose NAT - Give VPC and public subnet - SG is needed while for NAT Gateway its not needed to be added by us - Action - Disable - Change Source/Destination check - Attach to          Default Route Table with Source(0.0.0.0/0) and Target(NAT instance). 
+         - Amount of Traffic depends on the instance size and type
+         - Behind the SG
+       - NAT Gateway - Scale automatically - VPC - create a NAT Gateway - Public subnet - Allocate Elastic IP - include in Route Table (default in our case)
+         - SG are taken care automatically in NAT Gateways
+         - No Security Patches required
+         - Highly Available
+         - Redundency
+         - 10 GBps vs Instance depends on instance type
+         - Slightly Expensive
+154. High availability can be created using Autoscaling groups, multiple subnets in multiple AZ and a script to automate the failover       
+155. ACL vs SG
+       - SG works on Instance level, ACL works on Subnet level 
+       - SG supports Allow rules, ACL has both Allow and Deny rules
+       - SG are Stateful, ACL in not stateless
+       - Numerical Order in ACL
+       - ACL applies to instances in a subnet automatically
+       - Deault ACL has in out traffic is allowed
+       - Custom ACL has all denied
+       - One Subnet will have only One ACL
+       - Ephimeral ports need to be added to custom ACL for public facinig subnets
+       - Lower Number rule takes effect in ACL
+       - Each Subnet must have a ACL		  
 
 
 
