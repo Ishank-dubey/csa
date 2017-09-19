@@ -404,4 +404,11 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - NATs are used to provide internet access to an instance in private subnet
      - Bastion are used to administer the instanses in private subnets via SSH or RDP
 
+158. VPC FLOW LOGS
+     - VPC - ACTIONS - Create Flow Log - create logs - log the traffic data within the VPC
+
+159. 5 VPC are allowed by default in each AWS Region
+
+160. 
+     
 
