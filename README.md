@@ -392,7 +392,7 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Ephimeral ports need to be added to custom ACL for public facinig subnets
        - Lower Number rule takes effect in ACL
        - Each Subnet must have a ACL		  
-
+       - Block particular IP address using ACL not SG    
 
 
 
