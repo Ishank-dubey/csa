@@ -398,6 +398,10 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Each Subnet must have a ACL		  
        - Block particular IP address using ACL not SG    
 
+156. When we do a high availability app using ELB, its a good to have two public subnets and two private subnets also in            different AZ because AZ can go down.
 
+157. NATs vs Bastions
+     - NATs are used to provide internet access to an instance in private subnet
+     - Bastion are used to administer the instanses in private subnets via SSH or RDP
 
 
