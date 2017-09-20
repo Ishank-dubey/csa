@@ -431,7 +431,28 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      -Visibility Timeout- the time for which the message is invisible in the queue before it is visible again so if the             timeout occurs before the processing the same message can be taken by another consumer i.e. same message might be             delivered twice. 
      - Max visibility timeout is 12 hours
      - Long polling is way in which EC2 can query SQS for messages
+     - Message Oriented API
 
-161.      
+161. SWF (Simple Workflow Service) 
+     - Cordinate work across distribution application components.
+     - Execute via code or human action or scripts
+     - Retention upto 1 year
+     - Task oriented
+     - Task is assigned only once, keeps track of tasks and events
+     - SWF Actors
+       - Starters- Website, App
+       - Deciders - control the flow of activity
+       - Workers - Carry activity task
      
+162. SNS(Simple Notification Service)
+     - Publish messages from app and deliver them to subscribers
+     - Lambda can be associated with SNS
+     - Push messaging System
+     - Multiple recipients, formatted copies, stored in Multi AZ
+     - Create Topic- Create Subscription- Protocol(HTTP, HTTPS,Email, Email JSON, SQS, Application, Lambda)- Endpoint-                conformation
+     - Useful in Autoscaling 
+     - No polling- Push instantly 
+     - Delivery Over Multiple protocol
+     
+163.      
      
