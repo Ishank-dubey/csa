@@ -407,7 +407,10 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 158. VPC FLOW LOGS
      - VPC - ACTIONS - Create Flow Log - create logs - log the traffic data within the VPC
 
-159. 5 VPC are allowed by default in each AWS Region
+159. VPC and Subnets
+     - 5 VPC are allowed by default in each AWS Region
+     - 200 Subnets per VPC
+     - 5 NAT Gateways per AZ
 
 160. 
      
