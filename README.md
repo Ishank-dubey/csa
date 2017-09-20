@@ -412,6 +412,26 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - 200 Subnets per VPC
      - 5 NAT Gateways per AZ
 
-160. 
-     
+160. SQS
+     - Distributed Queue System that can be consumed by other component
+     - SQS is a PULL based system
+     - Example - S3->Lambda->SQS->EC2
+     - Even when the EC2 fails the message is still in SQS and can be comsumed by another SQS
+     - The message goes to timeout when its queried, size is 256Kb any text format and can be retrived programatically by SQS        API
+     - Types
+       - Standard Queue
+         - Unlimited Transactions per second
+         - One or more messages may reach out of order
+         - Best effort ordering but not guaranteed
+       - FIFO Queue
+         - 300 transactions per second
+         - Order is guaranteed
+         - Message is delivered once and remains until the consumer deletes it and so no duplicates
+       Messages can be kep in queue from 1 minute to 14 days, 4 days is default
+     -Visibility Timeout- the time for which the message is invisible in the queue before it is visible again so if the             timeout occurs before the processing the same message can be taken by another consumer i.e. same message might be             delivered twice. 
+     - Max visibility timeout is 12 hours
+     - Long polling is way in which EC2 can query SQS for messages
 
+161.      
+     
+     
