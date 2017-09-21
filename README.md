@@ -462,7 +462,11 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Publish, maintain and moniter API at any scale
      - Example - API Gateway - Triggers Lambda or functions in EC2
      - API Caching
-       - Cache the endpoint response, API gateway caches the response for a TTL
-     
+       - Cache the endpoint response, API gateway caches the response for a TTL and gives better performance
+       - Low cost and efficient
+       - Scales but throttle to prevent attacks
+       - Can be configured in cloud watch to see logs
+         
+       
      
      
