@@ -454,5 +454,15 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - No polling- Push instantly 
      - Delivery Over Multiple protocol
      
-163.      
+163. Elastic Transcoder
+     - Convert media file into other formats and charges on the minutes encoded and resolution
+     - Example- Upload a file to S3- invoke a lambda function -  Invokes Transcoder - Save transcoded file to S3
+     
+164. API Gateway
+     - Publish, maintain and moniter API at any scale
+     - Example - API Gateway - Triggers Lambda or functions in EC2
+     - API Caching
+       - Cache the endpoint response, API gateway caches the response for a TTL
+     
+     
      
