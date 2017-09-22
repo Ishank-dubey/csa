@@ -466,7 +466,19 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Low cost and efficient
        - Scales but throttle to prevent attacks
        - Can be configured in cloud watch to see logs
-         
+       - Cross Origin Resource Sharing needs to be enabled in the API Gateway
        
+165. Kinesis
+     - Streaming Data- Data that is generated continously and sent in small sizes
+     - Kinesis helps load and analyse streaming data
+     - Three kinesis services
+       - Kinesis Streams
+         - Data producers - Kinesis Streams - Stores for 24 hours default and extedn upto 7days
+         - Shards are used to store - Consumers like EC2 - then S3 etc
+         - The capacity of the Stream is the sum of capacities of all the shards
+       - Kinesis Firehose
+         - Data Producers - Streams but no shrads - Data is Analysed or Send to S3 or Redshift for example and not stored in              Stream(no need to manage Shards and retention)  
+       - Kinesis Analytics
+         - Helps run SQL type queries on Kinesis Data and save to S3, Redshift or Elastic Search Cluster
      
      
