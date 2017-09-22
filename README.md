@@ -481,7 +481,15 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Kinesis Analytics
          - Helps run SQL type queries on Kinesis(Kinesis Streams or Firehose) Data and save to S3, Redshift or Elastic Search            Cluster
 
-166.
+166. SWF(ensures task is done once only) is Task Oriented, SQS and SNS are Message Oriented
 
-     
+167. SNS subscribers - HTTP, HTTPS, Email JSON, Email, SQS, Application and Lambda
+
+168. SES - Simple Email Service
+
+169. AWS Resource Name is created when a SNS Topic is created
+
+170. SWF Domain - Collection of related workflows
+
+171. 
      
