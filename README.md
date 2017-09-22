@@ -479,6 +479,9 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Kinesis Firehose
          - Data Producers - Streams but no shrads - Data is Analysed or Send to S3 or Redshift for example and not stored in              Stream(no need to manage Shards and retention)  
        - Kinesis Analytics
-         - Helps run SQL type queries on Kinesis Data and save to S3, Redshift or Elastic Search Cluster
+         - Helps run SQL type queries on Kinesis(Kinesis Streams or Firehose) Data and save to S3, Redshift or Elastic Search            Cluster
+
+166.
+
      
      
