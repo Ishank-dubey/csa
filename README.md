@@ -491,5 +491,5 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 
 170. SWF Domain - Collection of related workflows
 
-171. 
+171. S3 url format - https://s3-region.amazonaws.com/bucket-name
      
