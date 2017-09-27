@@ -510,4 +510,20 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Shared Security Model
      - AWS is responsible for facility
      - AWS is responsible for the security configuration of its managed services like DynamoDB, RDS, Redshift, Elastic map            reduce, Amazon Workspaces
+     - AWS S3, EC2, VPC etc are under user control
+     - Managed services user needs to have account managenent and user access, MFA and user activity logging using                    CloudTrail(could Watch beig Monitering)
+     - Storage Decommissioning includes - degaussed and physically destroying the storage device
      
+175. Network Monitering and Protection
+     - DDoS,
+     - Man in the middle attacks
+     - Ip spoofing - Host based firewall, ip can be own
+     - Port Scanning - request advance permission for Scans of own instance
+     - Packet Sniffing by other tenants
+     
+176. Credentials 
+     - Passwords-root a/c or IAM users need to login to aws console
+     - MFA- root or IAM user need to login to aws console.
+     - Access keys- digital sign for programatical access
+     - Key Pairs - to ssh EC2 or Cloud front signed urls
+     - X.509 - Digitally Signed SOAP request to AWS APIs or HTTPS SSL server certification
