@@ -492,4 +492,22 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 170. SWF Domain - Collection of related workflows
 
 171. S3 url format - https://s3-region.amazonaws.com/bucket-name
+
+172. 11 Regions currently, China has one AZ and mostly 3 AZs
+
+173. Compliance -
+     - SOC 1/ SSAE 16, ISAE 3402
+     - SOC 2,
+     - SOC 3
+     - FISMA, DIACAP, FedRAMP
+     - PCI DSS Level 1
+     - ISO 27001
+     - ISO 9001
+     - ITAR
+     - FIPS 140-2
+     
+174. Security 
+     - Shared Security Model
+     - AWS is responsible for facility
+     - AWS is responsible for the security configuration of its managed services like DynamoDB, RDS, Redshift, Elastic map            reduce, Amazon Workspaces
      
