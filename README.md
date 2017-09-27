@@ -527,3 +527,5 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Access keys- digital sign for programatical access
      - Key Pairs - to ssh EC2 or Cloud front signed urls
      - X.509 - Digitally Signed SOAP request to AWS APIs or HTTPS SSL server certification
+     - AWS Trusted Advisor- helps close common security gaps, save money improve system performance like- 
+       not using IAM, not using MFA, S3 being open to public, not having CloudTrail
