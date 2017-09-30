@@ -529,3 +529,8 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - X.509 - Digitally Signed SOAP request to AWS APIs or HTTPS SSL server certification
      - AWS Trusted Advisor- helps close common security gaps, save money improve system performance like- 
        not using IAM, not using MFA, S3 being open to public, not having CloudTrail
+
+177. Instance Isolation - 
+     - Different instances running on the same physical machine are seperated by Xen hyperisor and a firewall
+     - Each instance has access to virtual hard disk and guest menory is used in other processes only after memory scrubbing
+     - In a SG all ingress traffic traffic is denied whereas outgoing is allowed
