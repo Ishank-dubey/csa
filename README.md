@@ -626,4 +626,7 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Transparent Attribute expenditure
        - AWS Blog, Trusted Advisor can help
        - EC2 reserved instances can help optimize costs whereas SNS and CloudWatch can help in expenditure awareness
+     - Operational Excellence
+       - AWS Config helps track and respond to changes in your AWS environment
+       - Tagging for easy identification
        
