@@ -587,7 +587,23 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 
 196. 1 hr is the maximum response time for a Business Level Premium Support Case
 
-
-     
+197. Design Principles(5 pillars)
+     - Security
+       - Apply security at all layers(Subnets, ACL, SG, Patching at times)
+       - Tracebility
+       - Customer secures in the could(IAM config, OS config, N/w config, Firewall config, Encryption)
+       - AWS takes care of Security in the cloud(Regions, AZ, Edge Locations)
+       - Data Protection- classification-> shall the data be public, private, restricted
+         - Encryption cam be done using S3, RDS, ELB, EBS
+       - Privilage Management
+         - ACL, Passcode management -rotation, strength, Roles, Groups, IAM, MFA
+       - Infra Protection
+         - VPC, Host-N/W boundary likw Bastions or Jump Boxes
+       - Detective controls
+         - CloudTrail(Reginal Service), ClouldWatch, AWS Config
+         - AWS Logs need to captured and analysed
+     - Reliability
+       - Dynamically have resources, Recovery from Service/infra failures
+       - Scaling horizontally- distrubuting system into small resources         
 
 
