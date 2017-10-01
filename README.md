@@ -552,3 +552,10 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Gateway Cached gives low latency access to frequently accessed data(32 Tb)
        - Gateway Storages all the primary data while doing the backup async(1 Tb)
        - Snapshot storage, Volume, Data Transfer, number of Gateways are cost deciding factors for Storage Gateways
+       
+182. Elasticity
+     - Proactive(Salaray day)
+     - Proactive Event Scaling(Black friday sales)
+     - Auto Scaling(based on demand)
+     
+183. Web Tier(allow 80 -http 443-https), Application Server(SSH port 22), DB Layer(only Applocation layer has access)     
