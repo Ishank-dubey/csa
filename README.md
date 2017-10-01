@@ -533,4 +533,22 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 177. Instance Isolation - 
      - Different instances running on the same physical machine are seperated by Xen hyperisor and a firewall
      - Each instance has access to virtual hard disk and guest menory is used in other processes only after memory scrubbing
-     - In a SG all ingress traffic traffic is denied whereas outgoing is allowed
+     - In a SG all ingress traffic is denied whereas outgoing is allowed
+     
+178. Guest Operating System-
+     - User has the root pernission, encrytion of data is a good practice(Encryption is available on EC2's more powerful              instances eg.- M3, C3, R3, G2)
+     
+179. SSL termination of Load Balancer is supported (i.e. data wont be encrypted between the ELB and the web server)and allows      to know the ip address of any client that connects in ELB
+     
+179. Direct Connect - Helps bypass the internet service providers usinf cross connect, have a Rackspace and connect to an AWS      direct connect equipment and also has virtual interfaces that help allow the access to public and private ip space
+
+180. Risk and Compliance
+     - Stratergic risk management is 2 times in a year
+     - AWS security scans are for underlying infra
+
+181. Storage Options-
+     - Storage Gateway
+       - Gateway cached and Gateway Stored volumes that can be mounted to iSCSI on the on premise applications
+       - Gateway Cached gives low latency access to frequently accessed data(32 Tb)
+       - Gateway Storages all the primary data while doing the backup async(1 Tb)
+       - Snapshot storage, Volume, Data Transfer, number of Gateways are cost deciding factors for Storage Gateways
