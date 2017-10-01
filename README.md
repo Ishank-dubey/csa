@@ -558,4 +558,36 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Proactive Event Scaling(Black friday sales)
      - Auto Scaling(based on demand)
      
-183. Web Tier(allow 80 -http 443-https), Application Server(SSH port 22), DB Layer(only Applocation layer has access)     
+183. Web Tier(allow 80 -http 443-https), Application Server(SSH port 22), DB Layer(only Applocation layer has access)  
+
+184. SQL Server's atorage can nit be increased and Auto Backup is enabled by default
+
+185. To run a DB on EC2 instance - EBS is suitble
+
+186. EBS snapshots are accessable via APIs and AWS console, CLI
+
+187. A Policy is a document that provides a formal statement of one or more permissions
+
+188. In a default VPC, all Amazon EC2 instances are assigned 2 IP addresses at launch, public and private ip address
+
+189. If an Amazon EBS volume is the root device of an instance, I can not detach it without stopping the instance
+     I can not move a reserved instance from one region to another, In RDS the maximum size for a Microsoft SQL Server      DB      Instance with SQL Server Express edition is 10Gb per DB
+     
+190. I can "force" a failover for any RDS instance that has Multi-AZ configured, Reserved instances are available for multi-AZ      deployments, MySQL installations default to port number 3306
+
+191. If an Amazon EBS volume is an additional partition (ie not the root volume) , I can detach it without stopping the            instance but it will take some time
+
+192. What are the four levels of AWS premium support - Basic, Deleloper, Business, Enterprise
+
+193. AZ - distinct locations within Region that are isolated from fail overs
+
+194. Individual instances are provisioned in AZ
+
+195. How many copies of my data does RDS - Aurora store by default - 6
+
+196. 1 hr is the maximum response time for a Business Level Premium Support Case
+
+
+     
+
+
