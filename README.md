@@ -605,5 +605,11 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Reliability
        - Dynamically have resources, Recovery from Service/infra failures
        - Scaling horizontally- distrubuting system into small resources         
-
+       - Foundations
+         - Comm links between HQ and datacenter
+         - N/W topology
+       - Change Management
+         - CloudWatch and Autoscaling that react to change in Environment, ClouDTrail
+       - Failure Management
+         - Cloud Formation?
 
