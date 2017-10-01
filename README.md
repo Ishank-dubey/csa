@@ -612,4 +612,18 @@ Remember: Direct Connect is the direct data line between Data center and AWS
          - CloudWatch and Autoscaling that react to change in Environment, ClouDTrail
        - Failure Management
          - Cloud Formation?
-
+     - Performance Efficiency
+       - Compute
+         - CPU, Memory, Auto scaling
+       - Storage
+         - Block based, Object based, Throughput, Random, Sequential, Availability
+       - DB
+         - RDS, DunanoDB, Redshift
+       - Space time trade off
+         - RDS Read Replicas, Elasicache, CloudFront, Direct Connect
+     - Cost Optimization
+       - Lowest price and still achieve the business goal
+       - Transparent Attribute expenditure
+       - AWS Blog, Trusted Advisor can help
+       - EC2 reserved instances can help optimize costs whereas SNS and CloudWatch can help in expenditure awareness
+       
