@@ -660,4 +660,9 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Resourse Groups are container for Tags have info on Regions, health, name, technology
        - Tag Editor can be helpful to start using Resourse Groups, add or edit or find Tags
  205. VPC Peering        
-      - Connection between two VPC using private IPs
+      - Connection between two VPC using private IPs and we can have connection between own VPC even in other AWS a/c but             within a Single Region
+      - No single point of failure nor bandwidth bottleneck
+      - Connection is via CIDR if it changes the commection wont work
+      - Transitive Peering is not supported
+      - Overlapping CIDRs can not have VPC peering
+      
