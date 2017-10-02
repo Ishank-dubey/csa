@@ -629,4 +629,8 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Operational Excellence
        - AWS Config helps track and respond to changes in your AWS environment
        - Tagging for easy identification
-       
+ 198. Kinesis -Big Data consumer and large social media stream, Redshift for BI and Elastic Map Redice for BigData                   processing
+      - Instance Store volumes can not be detached and attach to another instance whereas EBS(Can be stopped) can be
+ 199. OpsWorks 
+      - Orchestration service that uses Chef that has a receipe/cookBooks to maintain a consistent state
+ 200. curl or get http://169.254.169.254/latest/meta-data gives META DATA like public ip address
