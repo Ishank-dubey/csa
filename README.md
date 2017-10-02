@@ -634,3 +634,14 @@ Remember: Direct Connect is the direct data line between Data center and AWS
  199. OpsWorks 
       - Orchestration service that uses Chef that has a receipe/cookBooks to maintain a consistent state
  200. curl or get http://169.254.169.254/latest/meta-data gives META DATA like public ip address
+ 201. AWS Organizations
+      - A service that enables consolidating multiple AWS a/c and centrally manage
+      - 20 Linked a/c possible
+      - CloudTrail is per a/c per region but a central S3 bicket is possible
+      - Unused reserved instances for EC2 are applied across the group
+      - Root - Organizational Unit(contains AWS a/c and have policies or other OUs)
+        - Consolidated Billing
+          - Paying thats linked to all the accounts and can not access resourses
+          - Volume pricing discount
+        - All features
+          - 
