@@ -660,4 +660,4 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Resourse Groups are container for Tags have info on Regions, health, name, technology
        - Tag Editor can be helpful to start using Resourse Groups, add or edit or find Tags
  205. VPC Peering        
-       
+      - Connection between two VPC using private IPs
