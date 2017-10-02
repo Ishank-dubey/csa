@@ -670,3 +670,29 @@ Remember: Direct Connect is the direct data line between Data center and AWS
       - VPN can be configured fast(direct connect takes 5 months) but bandwidth can be low but Direct connect is a dedicated           connection
       - 10 Gbps and 1Gbps and sub 1Gb are available
       
+207. STS(Security Token Service)
+     - Grants Limited and temporary access to AWS resources for the users that are coming from
+       - Federation (active directiory i.e. joining a list of users in one domain with another domain)
+         - Uses SAML(Security Assertion Markup Language)
+         - Single Sign on allows users to login AWS console w/o IAM credentials
+         - Access is granted based off user Active Directory
+       - Federation
+         - OpenId, facebok, google, Amazon
+       - Cross Account Access
+     - Identity Broker- Service that allows to take identity from point A to B
+     - Identity Store - Services like active Directory of FB, Google
+     - Identity = user of like fb, google
+     - ERP-> Identidty Broker ≤-> Active Directory then Identity Broker to AWS Security Token Service(gives token, access            keys ad time duration) the token goes to ERP and S3 which can Authenticate ERP based on Token after communicationg with        IAM
+     - Identity Broker contacts with LAP first and then STS then App gets temporary access
+208. Active Directory Federation with AWS
+     - Sign on using Active Directory creds we receive a SAML 
+     - Authentication to active directory first then get temporary security creds
+     
+209. Workspaces
+     - Cloud Based replacement for the desktop
+     - No AWS account needed for access the Workspaces 
+     - Windows 7 experience that can be personalised or locked by admin
+     - Install own applications
+     - Persistent 
+     - Data Backed up on D:// drive every 12 hours
+     
