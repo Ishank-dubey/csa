@@ -665,4 +665,8 @@ Remember: Direct Connect is the direct data line between Data center and AWS
       - Connection is via CIDR if it changes the commection wont work
       - Transitive Peering is not supported
       - Overlapping CIDRs can not have VPC peering
+ 206. Direct Connect
+      - Dedicated Connection
+      - VPN can be configured fast(direct connect takes 5 months) but bandwidth can be low but Direct connect is a dedicated           connection
+      - 10 Gbps and 1Gbps and sub 1Gb are available
       
