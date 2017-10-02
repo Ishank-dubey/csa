@@ -644,4 +644,20 @@ Remember: Direct Connect is the direct data line between Data center and AWS
           - Paying thats linked to all the accounts and can not access resourses
           - Volume pricing discount
         - All features
-          - 
+ 202. Create Organization - Enable All Features/Enable All Features - Invite or Create Account using A/c id or email -               Organize accounts - Create Organizational Units - Now we can select an OU and add an account - Policies tab and create a       policy - Check in the Organize accounts and we can attach policies
+ 203. Cross Account Access - 
+      - We can login to an account with an IAM and access other a/c w/o providing creads
+        - Identify account numbers
+        - Create a Group and User in IAM
+        - Login
+        - Create the policy
+        - Create Cross account role
+        - Policy
+          - Version
+          - Statements - array of JSON objects that have keys such as Effect, Action, Resource
+          - We can create a Policy and Role that uses the policy and is for Cross Account Accesss 
+ 204. Tags are meta data of the AWS resourses and can be inherited in Cloud Formation, AutoScaling, Elactic Beanstalk
+       - Resourse Groups are container for Tags have info on Regions, health, name, technology
+       - Tag Editor can be helpful to start using Resourse Groups, add or edit or find Tags
+ 205. VPC Peering        
+       
