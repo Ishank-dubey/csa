@@ -824,3 +824,5 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Terminates
      Will nit fail on a Reboot
      AMI Created created will not have the instance data. 
+     
+244. For data integrity its good to stop and then take a snapshot and then create an AMI in EBS Backed instance else AWS takes      care to reboot if we take AMI snapshot w/o stopping. Snapshots are incremental and both Snapshots and AMI incure charges      unless deleted     
