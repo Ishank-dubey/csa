@@ -695,4 +695,61 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Install own applications
      - Persistent 
      - Data Backed up on D:// drive every 12 hours
-     
+
+210. ECS(Elastic Contaniner Service)
+     - Guest OS, Dependencies, App, VM now, when the number of VMs increase the dependency management may become difficult
+     - So a uniform standard container - build, test and deploy app quickly has all the code, config, dependencies and delives        environmental consistency and version control, operational efficiency and developer productivity
+     - Virualization VS Containerization
+       - Virtualization has a VM and guest OS whereas docker has only the App and dependencies and docker container
+       - Docker is faster, escape from Dependency Hell
+       - Isolation between container
+       - Code portability
+       - Micro Services- App A in container A and B in container B etc.
+     - Docker Components
+       - Image(like ISO) is file required to boot
+       - Docker Container- holds everything to run, start, stop or delete
+       - Layers- Union File System and image is built using the layer thats added or Updated
+       - Docker file- image then helps create a layer with instructions
+       - Docker Demon/Engine- runs on linux create operation env
+       - Docker Client- controls Deamon, interface between us and docker
+       - Docker Hub/registries- Existing images that we can use or are created before
+     - Amazon ECS - Scalable and fast container management service that runs, stops, manage docker containers on a cluster of        EC2 instances with API calls also gives access of state of cluster
+     - Regional, has ETL workloads, micro services model
+     - Image is a read only image that creats a docker container- Image is created from Dockerfile
+     - Images are stored in registry like Doker Hub or ECR(EC2 container registry), developers can use the docker CLI to push,        pull and manage images
+     - Task Definition
+       - Text files in JSON format
+       - Required to run docker container in Amazon ECS
+       - Specify the image to be used, cpu and memory to be used in container, if containers are linked  
+       - Which ports mapping to host
+       - What if container finishes or fails
+       - Starting commands, ennvironment vars
+       - IAM Roles
+       - Its like a Autoscaling that can help maintain desired count
+     - ECS Cluster
+       - Logical Group of ECS container instances
+       - Clusters are region specific
+       - One container can be part of one cluster at a time
+       - IAM policies are applicable to clusters
+       - Multiple instance types
+       
+     - ECS schediling
+       - Helps run specified number of tasks constantly and reschedules in case of a failure, ensure ELB is registered with            tasks , we can create own scheduler or third party schedulers like Blox
+       - ECS schedulers uset he state info from the ECS Api only
+    
+    - ECS Container Agent
+      - Allows container instances connect with the cluster
+      - Contained in Amazon ECS AMI but can be install on a EC2 instance that suports ECS Spec
+      - EC2 instances that have -
+        - Pre installed on special ECS AMIs
+        - Linux Based(will not work with windows but Amazon Linux, Ubuntu, RedHat, CentOS)
+     - ECS Security
+       - EC2 used IAM ROles to Access ECS, ECS tasks use IAM role to access services and resources 
+       - We can access and configure OS in EC2 instance in ECS Clusters
+     - ECS Limits
+       - Clusters per region = 1000 - soft
+       - Instances per Custer = 1000 - soft
+       - Service per cluster = 500 - soft
+       - One Load Balancer per service - Hard
+       - SG works on instance level not task or container level
+       
