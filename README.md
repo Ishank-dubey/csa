@@ -788,5 +788,39 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 
 227. 1024Kb is the block size in redshift columnar storage
 
-228. 
+228. In a Autoscaling group there is more than one Availability Zone with this number of instances, Auto Scaling selects the        Availability Zone with the instances that use the oldest launch configuration.
 
+229. Can make use of an OS level logging tools such as iptables and log events to CloudWatch or S3.
+
+230. The "Owner" refers to the identity and email address used to create the account AWS account.
+
+231. SQS long polling doesn’t return a response until a message arrives in the queue, reducing your overall cost over time.        Short polling WILL return empty responses.(ReturnMessageWaitTimeInSeconds)
+
+232. Proactive Cyclic Scaling allows you to scale during the desired time window.
+
+233. Once a VPC is set to Dedicated hosting, it is not possible to change the VPC or the instances to Default hosting.
+
+234. http://BUCKET.s3-REGION-ABC.amazonaws.com
+
+235. With the Resource Groups tool, you use a single page to view and manage your resources.
+
+236. Route53 has a security feature that prevents internal DNS from being read by external sources. The work around is to          create a EC2 hosted DNS instance that does zone transfers from the internal DNS, and allows itself to be queried by            external servers.
+
+237. A public IP address is not managed on the instance, it is an alias applied as a n/w address translation of the private ip      address
+
+238. Strongly Consistent reads can be taken care in development but cost can increase
+
+239 VPC peering does not support edge to edge routing.
+
+240. Poor timing of SQS processes can significantly impact the cost effectiveness of the solution.
+
+241. AWS does not copy launch permissions, user-defined tags, or Amazon S3 bucket permissions from the source AMI to the new        AMI.
+
+242. Combined Value and Name must not exced 400KB in DynamoDB
+
+243. AWS Instance Store looses info when
+     - Failure
+     - Instance Stops
+     - Terminates
+     Will nit fail on a Reboot
+     AMI Created created will not have the instance data. 
