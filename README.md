@@ -752,4 +752,32 @@ Remember: Direct Connect is the direct data line between Data center and AWS
        - Service per cluster = 500 - soft
        - One Load Balancer per service - Hard
        - SG works on instance level not task or container level
-       
+  
+211. For client side encryption- client library such as Amazon S3 Encryption Client.
+
+212. When in IAM new user - Acces Key ID and Secret Access Key are valid security creds that are attached themselves
+
+213. Enterprise, Business and developer are 3 support levels
+
+214. S3 - Read after write consistency for PUTS of New Objects and Eventual Consustency for PUTS and deletes
+
+215. Elastic Map Reduce can give root access i.e. can be SSHed
+
+216. When trying to grant an amazon account access to S3 using access control lists method of identification is email address      or canonical userID 
+
+217. AWS Export/Import supports- I/E in S3, import to EBS, import to Glacier but not Export to Glacier
+
+218. AWS trusted advisor service wont take care of Vulneribility scans on existing VPCs
+
+219. You should use provisioned IOPS for any requirement of 10,000 IOPS or more
+
+220. The different types of virtualization available on EC2 - Para-virtual (PV) and Hardware Virtual Machine
+
+221. AWS Import/Export allows for the importation of large data sets, using external hard disks which are sent directly to          amazon, therefore bypassing the internet amy be faster.
+
+222. A bucket that has static webhosting enabled on it will always have the format; -
+     https://<bucket-name>.s3-website-<AWS-region>.amazonaws.com
+     
+223.      
+
+
