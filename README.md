@@ -778,6 +778,15 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 222. A bucket that has static webhosting enabled on it will always have the format; -
      https://<bucket-name>.s3-website-<AWS-region>.amazonaws.com
      
-223.      
+223. DynamoDB is automatically redundant across multiple availability zones.    
 
+224. Decommissioning and destruction of storage media is a AWS Responsibility
+
+225. OS Level access is possible in EC2 and Elastic Map Reduce.
+
+226. Configure encryption when creating the EBS volume. You could use the OS to encrypt a new volume after mounting it to an        EC2 instance, however the quickest and most efficient way would be to encrypt the volume when you first provision it.
+
+227. 1024Kb is the block size in redshift columnar storage
+
+228. 
 
