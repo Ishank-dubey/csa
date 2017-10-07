@@ -828,3 +828,19 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 244. For data integrity its good to stop and then take a snapshot and then create an AMI in EBS Backed instance else AWS takes      care to reboot if we take AMI snapshot w/o stopping. Snapshots are incremental and both Snapshots and AMI incure charges      unless deleted    
 
 245. Reduce imput split size in Elastic Map Reduce cinfiguration, increase simultaneous mapper tasks to have more processing
+
+246. HTTPS is for client server and SSL/TLS is for server to say a DB connection
+
+247. By default all the incoming requests are denied, explicit allow overrides default, explicit deny overrides any allows
+
+248. EMR has Hadoop Engine
+
+249. Elastic BeanStalk - Worker environment tier provisions resources to support to handle background processing tasks
+                       - Tier that processes Web Requests is Web Server Tier 
+250. In NoSql - secondary indexes are only one and are created at the time of creating the table
+
+251. Server Access log provides record of any access to the S3 object.
+
+252. Signed URLs allow controlled access to authenticated users.
+
+253. On Demand EC2 instances are billed on hourly basis and we can stop them explicitly, Reserved are like a longer time period contract and Decicated ones are specific hardware, Elastic Ip stays with the EC2 instance even after stopping.. 
