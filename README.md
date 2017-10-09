@@ -844,3 +844,17 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 252. Signed URLs allow controlled access to authenticated users.
 
 253. On Demand EC2 instances are billed on hourly basis and we can stop them explicitly, Reserved are like a longer time period contract and Decicated ones are specific hardware, Elastic Ip stays with the EC2 instance even after stopping.. 
+
+254. A VPC endpoint enables you to create a private connection between your VPC and another AWS service without requiring          access over the Internet, through a NAT device, a VPN connection, or AWS Direct Connect.
+
+255. Elastic N/W interfaces in VPC- EC2 with reased IP Address is an ENI, creates a dual homed 
+
+256. IPsec is a VPC security protocol.
+
+257. VPG is a AWS VPC side, CGW is VPC thats customer side
+
+258. DHCP option set helps resolve the DNS name outside the AWS.
+
+259. When a EC2-VPC instance is stopped - EIP remains attached, ENI is detached, underlying host computer is changed
+
+260. 
