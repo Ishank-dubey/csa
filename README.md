@@ -857,4 +857,6 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 
 259. When a EC2-VPC instance is stopped - EIP remains attached, ENI is detached, underlying host computer is changed
 
-260. 
+260. AutoScaling - Manual, Scheduled, on demand, maintain given instances(terminate the unhealthy ones with new ones)
+
+261. Elastic Load Balancer - Internet, Internal, HTTPS(using SSL)
