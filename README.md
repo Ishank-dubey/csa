@@ -871,4 +871,18 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 
 266. AWS RDS read repplicas can be done across regions and are supported in Aurora, PostGres, MySQL. Replication can be done across          geography/region
 
-267. 
+267. SQS queue has a default Visibility Timeout of 30 secs and extendable to 12 hours. Long polling ReceiveMessage wauts for 1 to 20          seconds else again execute the ReceiveMessage function
+
+268. In SNS Publisher sends to Subscriber a message via a Topic
+
+269. SQS has properties of MessageID and Body that contains Key-Value pairs of uninterpreted data
+
+270. Multiple SWF in same domain can interact w/ each other but in another domain can not. SWF ensures that a Task is done only ONCE.
+
+271. Create SNS topic and have multiple SQS servises subscribe to the SNS Topic.
+
+272. SQS default message retention is 4 days and max is 14 days and SWF has 1 year retention.
+
+273. After a delete of topic name, new can be created in 30-60 seconds also depends in the number of active subscribers
+
+274. After SNS publises a topic successfully it can not be recalled
