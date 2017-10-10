@@ -890,3 +890,9 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 275. Long polling max wait is 20 secs
 
 276. SQS wont guarantee delivery order.
+
+277. Ms SQL enterprice can be provisioned in AWS RDS on a Bring your own licence
+
+278. MySQL, Maria, Postgres, Aurora have read replica.
+
+279. All AWS RDS have multi AZ
