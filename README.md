@@ -886,3 +886,7 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 273. After a delete of topic name, new can be created in 30-60 seconds also depends in the number of active subscribers
 
 274. After SNS publises a topic successfully it can not be recalled
+
+275. Long polling max wait is 20 secs
+
+276. SQS wont guarantee delivery order.
