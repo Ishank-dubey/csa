@@ -860,3 +860,15 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 260. AutoScaling - Manual, Scheduled, on demand, maintain given instances(terminate the unhealthy ones with new ones)
 
 261. Elastic Load Balancer - Internet, Internal, HTTPS(using SSL)
+
+262. Autoscaling has Minimum size and Launch Configuration
+
+263. IAM policy has - action, service, resourse, effect(ASE R,assiatant software engineer Resources)
+
+264. EC2 roles produce tokens
+
+265. MFA, Passcode policy, ip address policy
+
+266. AWS RDS read repplicas can be done across regions and are supported in Aurora, PostGres, MySQL. Replication can be done across          geography/region
+
+267. 
