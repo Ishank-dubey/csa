@@ -916,4 +916,6 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      - Memcached - add nodes to clusters
      - Redis has one node, Memcached has 20 nodes by default limit
      - AutoDiscovery can be turned on in the client side for scaling events
-288. 
+288. Chef is Related with OpsWorks. BeanStalk  is related with just delpoyinhg code, the service takes acre of provisioning resources,        autoscaling, firewalls, configurations
+
+289. AWS Config
