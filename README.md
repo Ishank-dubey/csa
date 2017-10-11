@@ -895,4 +895,20 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 
 278. MySQL, Maria, Postgres, Aurora have read replica.
 
-279. All AWS RDS have multi AZ
+279. All AWS RDS have multi AZ.query is best suited to fond one object or meta data.
+
+280. SPF records are used to verify authorised mail sent from your domain
+
+281. All DNS records have SOA Records by default
+
+282. Route53 does Fail check, dns registration, dns service but not Load Balancing
+
+283. CNAME can be used to convert on Domanin name to another
+
+284. TXT record are used to store raw info about a Host
+
+285. Route53 can create Public and Private hosted zones, TCP is used when the response size is 512 Bytes, UPD is used to serve mostly        requests
+
+286. Rute53 can route to S3 static websites, ELS, EC2, RDS, CloudFront
+
+287. 
