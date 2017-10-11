@@ -909,6 +909,11 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 
 285. Route53 can create Public and Private hosted zones, TCP is used when the response size is 512 Bytes, UPD is used to serve mostly        requests
 
-286. Rute53 can route to S3 static websites, ELS, EC2, RDS, CloudFront
+286. Route53 can route to S3 static websites, ELS, EC2, RDS, CloudFront
 
-287. 
+287. Redis is used when we need to take backups and restore, sort and rank(suited in leader boards apps), clones and read replicas.          Memcached is for simple object store for simple partition
+     - Redis scales horizontally - Replication Group and add clusters
+     - Memcached - add nodes to clusters
+     - Redis has one node, Memcached has 20 nodes by default limit
+     - AutoDiscovery can be turned on in the client side for scaling events
+288. 
