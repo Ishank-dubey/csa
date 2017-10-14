@@ -919,3 +919,5 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 288. Chef is Related with OpsWorks. BeanStalk  is related with just delpoyinhg code, the service takes acre of provisioning resources,        autoscaling, firewalls, configurations
 
 289. AWS Config
+
+290. AWS IT Controls include - People, Technology and Processes.
