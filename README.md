@@ -921,3 +921,10 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 289. AWS Config
 
 290. AWS IT Controls include - People, Technology and Processes.
+
+291. For a distribured denial of service and minimize the attack area-
+     - Reduce the number of internet entry points.
+     - Obfuscate necessary internet points to a level that untrusted end users can not ccess them.
+     - Ading non-critical entry points
+     
+292. AZ- has multiple data centers and redundant power with networking capabilities.     
