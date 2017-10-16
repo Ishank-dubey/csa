@@ -929,6 +929,6 @@ Remember: Direct Connect is the direct data line between Data center and AWS
      
 292. AZ- has multiple data centers and redundant power with networking capabilities.
 
-293. S3 Webhosted url fromat - example-bucket-name.s3-website-<AWS-region>.amazonaws.com
+293. S3 Webhosted url fromat - example-bucket-name.s3-website-AWS-region.amazonaws.com
 
 294. An object docs/doc1.html in a examplebucket - http://examplebucket.s3-website-us-east-1.amazonaws.com/docs/doc1.html
