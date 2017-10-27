@@ -932,3 +932,6 @@ Remember: Direct Connect is the direct data line between Data center and AWS
 293. S3 Webhosted url fromat - example-bucket-name.s3-website-AWS-region.amazonaws.com
 
 294. An object docs/doc1.html in a examplebucket - http://examplebucket.s3-website-us-east-1.amazonaws.com/docs/doc1.html
+
+
+                            XXXXXXXXXXXXXXXXX-------CLEARED-------XXXXXXXXXXXXXXXXX
